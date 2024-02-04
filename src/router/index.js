@@ -14,14 +14,14 @@ const router = createRouter({
     { path: '/', component: HomeView},
     { path: '/regisztracio', component: RegistrationView},
     { path: '/bejelentkezes', component: LoginView},
-    { path: '/blogok', component: BlogsView},
+    { path: '/termekek', component: BlogsView},
     { path: '/ujblog', component: NewBlogView},
   ]
 })
 
 router.beforeEach((to,from,next) =>{
   const {status} = storeToRefs(useUserStore());
-  const publicPages = ['/','/bejelentkezes','/regisztracio','/blogok'];
+  const publicPages = ['/','/bejelentkezes','/regisztracio','/termekek'];
   const autRequired = !publicPages.includes(to.path);
   if (autRequired && !status.value.loggedIn){
     return next('/bejelentkezes')

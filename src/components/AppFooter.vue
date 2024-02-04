@@ -22,7 +22,8 @@
       <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 
     </ul>
-    <p>&copy;2024 Game Strix | By Boglári Bence | Horváth Máté | Vida Csaba Zsombor</p>
+    <p>&copy;2024 GameStrix webáruház</p>
+    <p>By Boglári Bence | Horváth Máté | Vida Csaba Zsombor</p>
   </footer>
 </template>
 
