@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="/"><ion-icon name="home-outline"></ion-icon></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -36,7 +36,7 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                ><img src="../assets/img/user.png" style="height: 25px;" alt=""></a>
+                ><ion-icon name="person-outline"></ion-icon></a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <router-link class="dropdown-item" to="/bejelentkezes"
